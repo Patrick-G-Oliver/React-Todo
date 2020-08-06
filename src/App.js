@@ -41,7 +41,8 @@ class App extends React.Component {
             ...todo, 
             done: !todo.done
           };
-        };
+        }
+        return todo;
       })
     });
   };
