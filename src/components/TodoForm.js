@@ -30,7 +30,7 @@ class TodoForm extends Component {
                     name="todo"
                     onChange={this.handleChange}
                 />
-                <button>
+                <button className="add-task-button">
                     Add a Task
                 </button>
             </form>

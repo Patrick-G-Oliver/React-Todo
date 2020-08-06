@@ -1,0 +1,35 @@
+html {
+    font-family: 'Homemade Apple', cursive;
+    background-color: #ececdb;
+    text-align: center;
+}
+
+.header-and-form {
+    text-align: center;
+}
+
+form > input {
+    font-family: 'Homemade Apple', cursive;
+    background-color: #ececdb;
+    border: 0;
+    border-bottom: 1px solid;
+    width: 40%;
+}
+
+.add-task-button {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.25rem;
+    background-color: #ececdb;
+    border: 1px solid;
+    border-radius: 40%;
+}
+
+
+
+.remove-task-button {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.25rem;
+    background-color: #ececdb;
+    border: 1px solid;
+    border-radius: 40%;
+}
