@@ -13,12 +13,14 @@ const TodoList = props => {
                         todo={todo}
                         toggleTodo={props.toggleTodo}
                     />
-                ))};
+                ))}
             </div>
-            <button>
-                onClick={(event) => props.clearDoneTodos(event)}
+            <button
+                onClick={(event) => props.clearDoneTodos(event)}>
                 Remove Thing(s) Done
             </button>
         </div>
     );
 };
+
+export default TodoList;

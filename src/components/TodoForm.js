@@ -10,7 +10,7 @@ class TodoForm extends Component {
 
     handleChange = event => {
         this.setState({
-            [e.target.name]: e.target.value
+            [event.target.name]: event.target.value
         });
     };
 
@@ -26,7 +26,7 @@ class TodoForm extends Component {
             <form onSubmit={this.submitTodo}>
                 <input 
                     type="text"
-                    value="this.state.todo"
+                    value={this.state.todo}
                     name="todo"
                     onChange={this.handleChange}
                 />

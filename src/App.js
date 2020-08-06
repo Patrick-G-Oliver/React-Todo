@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
 const todos = [
   {
     task: "bake bread",
-    id: Date.now(),
+    id: 1,
     completed: false
   },
   {
     task: "mow lawn",
-    id: Date.now(),
+    id: 2,
     completed: false
   },
   {
     task: "buy groceries",
-    id: Date.now(),
+    id: 3,
     completed: false
   }
 ];
@@ -46,13 +48,13 @@ class App extends React.Component {
 
   addTodo = (event, todo) => {
     event.preventDefault();
-    const newTask = {
+    const newTodo = {
       task: todo,
       id: Date.now(),
       done: false
     };
     this.setState({
-      todos: [...this.state.todos, newTask]
+      todos: [...this.state.todos, newTodo]
     });
   };
 
@@ -66,10 +68,18 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Things to do...</h1>
+        <div>
+          <h1>Things to do...</h1>
+          <TodoForm addTodo={this.addTodo} /> 
+        </div>
+        <TodoList
+          todos={this.state.todos}
+          toggleTodo={this.toggleTodo}
+          clearDoneTodos={this.clearDoneTodos}
+        />
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
