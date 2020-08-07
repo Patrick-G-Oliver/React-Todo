@@ -28,6 +28,7 @@ class TodoForm extends Component {
                     type="text"
                     value={this.state.todo}
                     name="todo"
+                    placeholder="Type your task here."
                     onChange={this.handleChange}
                 />
                 <button className="add-task-button">

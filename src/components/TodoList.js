@@ -16,7 +16,7 @@ const TodoList = props => {
             <button
                 onClick={(event) => props.clearDoneTodos(event)}
                 className="remove-task-button">
-                Remove Thing(s) Done
+                Remove Task(s)
             </button>
         </div>
     );
