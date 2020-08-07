@@ -13,11 +13,13 @@ const TodoList = props => {
                     toggleTodo={props.toggleTodo}
                 />
             ))}
-            <button
-                onClick={(event) => props.clearDoneTodos(event)}
-                className="remove-task-button">
-                Remove Task*
-            </button>
+            <div className="removeButtonWrapper">
+                <button
+                    onClick={(event) => props.clearDoneTodos(event)}
+                    className="remove-task-button">
+                    Remove*
+                </button>
+            </div>
             <p className="instructions-p-tag">* Click on a task to mark as done. Then click "Remove" button to remove from list.</p>
         </div>
     );

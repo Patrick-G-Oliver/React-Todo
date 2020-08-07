@@ -31,9 +31,11 @@ class TodoForm extends Component {
                     placeholder="Type your task here."
                     onChange={this.handleChange}
                 />
-                <button className="add-task-button">
-                    Add a Task
-                </button>
+                <div className="addButtonWrapper">
+                    <button className="add-task-button">
+                        Add a Task
+                    </button>
+                </div>
             </form>
         );
     };

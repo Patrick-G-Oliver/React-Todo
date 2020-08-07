@@ -15,7 +15,7 @@ body {
 .outer-wrapper {
     margin: 25px auto;
     border: 1.25px solid;
-    border-radius: 5px;
+    border-radius: 7.5px;
     width: 90%;
     box-shadow: 0 10px 10px 1px rgb(65, 64, 62);
 }
@@ -68,40 +68,60 @@ form > input {
     }
 }
 
+.addButtonWrapper {
+    margin: 25px auto;
+    border: 1.25px solid;
+    border-radius: 7.5px;
+    width: 50%;
+    box-shadow: 0 10px 10px 1px inset rgb(65, 64, 62);
+}
+
 .add-task-button {
+    color: #073001;
+    width: 80%;
     padding: 15px;
-    margin: 15px 0 20px 0;
+    margin: 15px auto;
     font-family: 'Cinzel', serif;
     font-size: 1.25rem;
     background-color: #ececdb;
     border: 1px solid;
-    border-radius: 90%;
+    border-radius: 3%;
     box-shadow: 0 5px 10px 1px rgb(65, 64, 62);
     outline: none;
 }
 
 .add-task-button:active {
-  background-color: rgb(238,235,209);
-  box-shadow: 0 5px rgb(65, 64, 62);
-  transform: translateY(4px);
+    background-color: rgb(238,235,209); 
+    box-shadow: 0 5px rgb(65, 64, 62);
+    transform: translateY(4px);
+}
+
+.removeButtonWrapper {
+    margin: 25px auto;
+    border: 1.25px solid;
+    border-radius: 7.5px;
+    width: 50%;
+    box-shadow: 0 10px 10px 1px inset rgb(65, 64, 62);
 }
 
 .remove-task-button {
+    color: #410303;
+    width: 80%;
     padding: 15px;
-    margin: 20px 0 15px 0;
+    margin: 15px auto;
     font-family: 'Cinzel', serif;
     font-size: 1.25rem;
     background-color: #ececdb;
     border: 1px solid;
-    border-radius: 90%;
+    border-radius: 3%;
     box-shadow: 0 5px 10px 1px rgb(65, 64, 62);
     outline: none;
 }
 
 .remove-task-button:active {
-  background-color: rgb(238,235,209);
-  box-shadow: 0 5px rgb(65, 64, 62);
-  transform: translateY(4px);
+    background-color: rgb(238,235,209);
+    box-shadow: 0 5px rgb(65, 64, 62);
+    transform: translateY(4px);
 }
 
 .taskPTag {
