@@ -18,7 +18,7 @@ const TodoList = props => {
                 className="remove-task-button">
                 Remove Task*
             </button>
-            <p>* Click on a task to mark as done. Then click "Remove" button to remove from list.</p>
+            <p className="instructions-p-tag">* Click on a task to mark as done. Then click "Remove" button to remove from list.</p>
         </div>
     );
 };

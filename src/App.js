@@ -69,7 +69,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="outer-wrapper">
         <div className="header-and-form">
           <h1>Things to do...</h1>
           <TodoForm addTodo={this.addTodo} /> 
