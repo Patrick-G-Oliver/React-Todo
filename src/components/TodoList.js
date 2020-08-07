@@ -16,8 +16,9 @@ const TodoList = props => {
             <button
                 onClick={(event) => props.clearDoneTodos(event)}
                 className="remove-task-button">
-                Remove Task(s)
+                Remove Task*
             </button>
+            <p>* Click on a task to mark as done. Then click "Remove" button to remove from list.</p>
         </div>
     );
 };
