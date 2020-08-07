@@ -1,5 +1,4 @@
 html {
-    /*font-family: 'Homemade Apple', cursive;*/
     font-family: 'Cinzel', serif;
     background-color: #ececdb;
     text-align: center;
@@ -15,7 +14,7 @@ body {
 
 .outer-wrapper {
     margin: 25px auto;
-    border: 1.5px solid;
+    border: 1.25px solid;
     border-radius: 5px;
     width: 90%;
     box-shadow: 0 10px 10px 1px rgb(65, 64, 62);
@@ -29,7 +28,6 @@ form > input {
     display: flex;
     flex-direction: column;
     margin: 25px auto;
-    /*font-family: 'Homemade Apple', cursive;*/
     font-family: 'Cinzel', serif;
     background-color: #ececdb;
     border: 0;
@@ -73,25 +71,37 @@ form > input {
 .add-task-button {
     padding: 15px;
     margin: 15px 0 20px 0;
-    /*font-family: 'Homemade Apple', cursive;*/
     font-family: 'Cinzel', serif;
     font-size: 1.25rem;
     background-color: #ececdb;
     border: 1px solid;
     border-radius: 90%;
+    box-shadow: 0 5px 10px 1px rgb(65, 64, 62);
     outline: none;
+}
+
+.add-task-button:active {
+  background-color: rgb(238,235,209);
+  box-shadow: 0 5px rgb(65, 64, 62);
+  transform: translateY(4px);
 }
 
 .remove-task-button {
     padding: 15px;
     margin: 20px 0 15px 0;
-    /*font-family: 'Homemade Apple', cursive;*/
     font-family: 'Cinzel', serif;
     font-size: 1.25rem;
     background-color: #ececdb;
     border: 1px solid;
     border-radius: 90%;
+    box-shadow: 0 5px 10px 1px rgb(65, 64, 62);
     outline: none;
+}
+
+.remove-task-button:active {
+  background-color: rgb(238,235,209);
+  box-shadow: 0 5px rgb(65, 64, 62);
+  transform: translateY(4px);
 }
 
 .taskPTag {
